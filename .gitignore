@@ -1,8 +1,47 @@
-# Ignore Python cache folders 
+# Python cache folders
 __pycache__/
-
-# Ignore compiled Python bytecode files 
 *.pyc
+*.pyo
+*.pyd
 
-# Ignore macOS system files
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+
+# Streamlit
+.streamlit/
+
+
+# macOS / system files
 .DS_Store
+
+
+# Database
+data/database.db
+*.db
+*.sqlite3
+
+
+# Logs & temp files
+*.log
+
+
+# Jupyter 
+.ipynb_checkpoints/
+
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+
+# Model files
+*.pkl
+*.joblib
+
+
+# Environment variables 
+.env

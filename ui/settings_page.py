@@ -1,22 +1,20 @@
 import streamlit as st
 
+
 def show(authenticator):
-
-    st.title("Settings")
-
- 
     if not st.session_state.get("authentication_status"):
-        st.warning("Please login first")
+        st.warning("Please log in to access this page.")
         return
 
-  
-    st.subheader("Account")
+    name     = st.session_state.get('name', 'User')
+    username = st.session_state.get('username', '')
 
-    st.write(f"Logged in as: **{st.session_state.get('name')}**")
+    st.title("Settings")
+    st.markdown("---")
 
-    st.divider()
+    st.markdown(f"**Name:** {name}")
+    st.markdown(f"**Username:** {username}")
 
-    st.subheader("Actions")
+    st.markdown("---")
 
-  
     authenticator.logout("Logout", "main")

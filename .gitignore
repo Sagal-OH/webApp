@@ -5,12 +5,6 @@ __pycache__/
 *.pyd
 
 
-# Virtual environments
-venv/
-env/
-.venv/
-
-
 # Streamlit
 .streamlit/
 
@@ -28,20 +22,16 @@ data/database.db
 # Logs & temp files
 *.log
 
-
 # Jupyter 
 .ipynb_checkpoints/
-
 
 # VS Code / IDE
 .vscode/
 .idea/
 
 
-# Model files
-*.pkl
-*.joblib
-
-
-# Environment variables 
-.env
+# Data
+data/raw/
+data/processed/
+*.xlsx
+*.csv
